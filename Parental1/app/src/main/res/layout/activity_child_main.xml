@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/gradient_background">
+
+    <!-- Device Verification Heading -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="@string/device_verification"
+        android:textSize="24sp"
+        android:layout_marginTop="40dp" />
+
+    <!-- Child Email input field (disabled) -->
+    <EditText
+        android:id="@+id/childEmailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_child_email"
+        android:inputType="textEmailAddress"
+        android:autofillHints="true"
+        android:minHeight="48dp"
+        android:background="@drawable/rounded_input_background"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#CCCCCC"
+        android:enabled="false" />
+
+    <!-- Parent Email input field -->
+    <EditText
+        android:id="@+id/parentEmailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_parent_email"
+        android:inputType="textEmailAddress"
+        android:autofillHints="true"
+        android:minHeight="48dp"
+        android:background="@drawable/rounded_input_background"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#CCCCCC" />
+
+    <!-- Generate QR Code button -->
+    <Button
+        android:id="@+id/generateQRButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/generate_qr_code"
+        android:layout_marginTop="30dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_button_background"
+        android:padding="10dp" />
+
+    <!-- ImageView to display the generated QR Code -->
+    <ImageView
+        android:id="@+id/qrCodeImageView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:importantForAccessibility="no" />
+
+    <!-- Connection success message -->
+    <Button
+        android:id="@+id/connectionSuccessTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/connected_successfully_with_parent"
+        android:textSize="18sp"
+        android:textColor="#101010"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:layout_marginTop="24dp" />
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity"
+    android:background="@drawable/gradient_background">
+
+    <!-- Dashboard Title at the Top -->
+    <TextView
+        android:id="@+id/dashboard_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Parent_Dashboard"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:textColor="#000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Clickable ImageView for the Image -->
+    <ImageView
+        android:id="@+id/dashboard_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/lens_image" 
+    android:layout_marginTop="16dp"
+    android:adjustViewBounds="true"
+    android:scaleType="centerCrop"
+    android:clickable="true"
+    android:focusable="true"
+    app:layout_constraintTop_toBottomOf="@id/dashboard_title"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- TextView for Screen Monitoring Content -->
+    <TextView
+        android:id="@+id/screen_monitoring_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Screen Monitoring:\nThis feature allows you to track user activity, monitor screen time, and log interactions for better insights."
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="#333333"
+        app:layout_constraintTop_toBottomOf="@id/dashboard_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,99 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.parental1">
+
+    <!-- Permissions -->
+    <!-- Common permissions for all Android versions -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.ANSWER_PHONE_CALLS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" /> <!-- For Android 13+ -->
+
+    <!-- Permissions for Android 13+ (API 33+) -->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+
+    <!-- Permissions for Android 12 and below (API < 33) -->
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+    <!-- Feature declarations for hardware-related permissions -->
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.location" android:required="false" />
+    <uses-feature android:name="android.hardware.location.gps" android:required="false" />
+    <uses-feature android:name="android.hardware.microphone" android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light"
+        android:versionCode="1"
+        android:versionName="1.0"
+        tools:targetApi="34"
+        android:usesCleartextTraffic="true">
+
+        <!-- Network Security Config -->
+        <meta-data
+            android:name="android.security.NETWORK_SECURITY_CONFIG"
+            android:resource="@xml/network_security_config" />
+
+        <!-- Activities -->
+        <activity android:name=".HomeActivity" android:exported="false" />
+
+        <service
+            android:name=".MultiFeaturesJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="mediaProjection"
+            tools:ignore="ForegroundServicePermission" />
+
+        <!-- Role Selection Activity as Launcher -->
+        <activity
+            android:name=".RoleSelectionActivity"
+            android:exported="true"
+            android:label="@string/Parental1"
+            android:theme="@style/Theme.AppCompat.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Other activities -->
+        <activity android:name=".ForgotPasswordActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".ResetCodeActivity" />
+        <activity android:name=".UpdatePasswordActivity" />
+        <activity android:name=".WelcomeActivity" />
+        <activity android:name=".ChildMainActivity" />
+        <activity android:name=".VerificationActivity" />
+        <activity android:name=".DashboardActivity" />
+        <activity android:name=".SplashActivity" />
+    </application>
+</manifest>

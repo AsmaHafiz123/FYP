@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/gradient_background">
+
+    <!-- Device Verification Heading -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="@string/device_verification"
+        android:textSize="24sp"
+        android:layout_marginTop="40dp" />
+
+    <Button
+        android:id="@+id/scan_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_qr_scan"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="12dp"
+        android:textColor="#121212"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/rounded_button_background" />
+
+
+    <!-- Connection Success Button -->
+    <Button
+        android:id="@+id/connectionSuccessTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/connected_successfully_with_child"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="12dp"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif"
+        android:visibility="gone"
+        android:backgroundTint="@color/teal_700"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rounded_button_background" />
+
+
+    <!-- QR Code Scanner View -->
+    <com.journeyapps.barcodescanner.DecoratedBarcodeView
+        android:id="@+id/barcode_scanner"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone"/>
+
+
+</LinearLayout>

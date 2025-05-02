@@ -1,0 +1,130 @@
+[versions]
+androidxAppcompatAppcompat = "1.6.1"
+androidxMaterial = "1.7.5"
+androidxMaterialVersion = "1.4.0"
+androidxUi = "1.2.1"
+androidxUiToolingPreview = "1.2.1"
+appcompatV7 = "28.0.0"
+appcompatVersion = "1.7.0"
+ccp = "2.5.7"
+ccpVersion = "2.5.6"
+converterGson = "2.9.0"
+coreKtx = "1.15.0"
+firebaseAuth = "23.1.0"
+googleMaterial = "1.9.0"
+gradle = "8.0.2"
+jetbrainsKotlinxCoroutinesAndroid = "1.7.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.2"  # Updated version
+kotlinGradlePlugin = "1.7.10"
+kotlinxCoroutinesAndroid = "1.7.3"
+kotlinxCoroutinesAndroidVersion = "1.6.0"
+kotlinxCoroutinesCore = "1.7.3"
+lifecycleRuntimeKtx = "2.8.7"
+activityCompose = "1.9.3"
+composeBom = "2024.10.01"
+kotlin = "2.0.0"  # Add the Kotlin version here
+
+constraintlayout = "2.2.0"
+appcompat = "1.7.0"
+loggingInterceptor = "4.9.0"
+loggingInterceptorVersion = "4.9.2"
+material = "1.12.0"
+composeUi = "1.7.5"
+material3 = "1.3.1"
+materialVersion = "1.12.0"
+okhttp = "4.10.0"
+retrofit = "2.9.0"
+runtime = "1.7.5"
+socketIoClient = "2.0.1"
+squareupLoggingInterceptor = "4.10.0"
+ui = "1.7.5"
+uiTestJunit4 = "1.7.5"
+uiTooling = "1.7.5"
+uiToolingPreview = "1.7.5"
+uiToolingPreviewVersion = "1.4.0"
+uiToolingVersion = "1.2.1"
+uiVersion = "1.4.0"
+material3Android = "1.3.1"
+junitJunit = "4.12"
+activity = "1.9.3"
+constraintlayoutVersion = "2.2.0"
+vectordrawable = "1.2.0"
+vectordrawableAnimated = "1.2.0"
+
+
+
+
+
+
+
+
+
+
+
+
+[libraries]
+androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompatVersion" }
+androidx-appcompat-appcompat-v161 = { module = "androidx.appcompat:appcompat", version.ref = "androidxAppcompatAppcompat" }
+androidx-core-ktx = { module = "androidx.core:core-ktx", version = "1.15.0" }
+androidx-lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version = "2.8.7" }
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version = "1.9.3" }
+androidx-material = { module = "androidx.compose.material:material", version.ref = "androidxMaterial" }
+androidx-material-v140 = { module = "androidx.compose.material:material", version.ref = "androidxMaterialVersion" }
+androidx-runtime = { module = "androidx.compose.runtime:runtime", version.ref = "runtime" }
+androidx-ui-tooling-preview-v121 = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "androidxUiToolingPreview" }
+androidx-ui-tooling-preview-v140 = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "uiToolingPreviewVersion" }
+androidx-ui-tooling-v121 = { module = "androidx.compose.ui:ui-tooling", version.ref = "uiToolingVersion" }
+androidx-ui-v121 = { module = "androidx.compose.ui:ui", version.ref = "androidxUi" }
+androidx-ui-v140 = { module = "androidx.compose.ui:ui", version.ref = "uiVersion" }
+androidx-vectordrawable-animated = { module = "androidx.vectordrawable:vectordrawable-animated", version.ref = "vectordrawableAnimated" }
+androidx-vectordrawable = { module = "androidx.vectordrawable:vectordrawable", version.ref = "vectordrawable" }
+appcompat-v7 = { module = "com.android.support:appcompat-v7", version.ref = "appcompatV7" }
+ccp = { module = "com.hbb20:ccp", version.ref = "ccp" }
+ccp-v256 = { module = "com.hbb20:ccp", version.ref = "ccpVersion" }
+converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "converterGson" }
+firebase-auth = { module = "com.google.firebase:firebase-auth", version.ref = "firebaseAuth" }
+gradle = { module = "com.android.tools.build:gradle", version.ref = "gradle" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlinGradlePlugin" }
+kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinxCoroutinesAndroid" }
+kotlinx-coroutines-android-v160 = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinxCoroutinesAndroidVersion" }
+kotlinx-coroutines-android-v170 = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "jetbrainsKotlinxCoroutinesAndroid" }
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesCore" }
+logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "loggingInterceptor" }
+logging-interceptor-v4100 = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "squareupLoggingInterceptor" }
+logging-interceptor-v492 = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "loggingInterceptorVersion" }
+material = { module = "com.google.android.material:material", version.ref = "materialVersion" }
+material-v190 = { module = "com.google.android.material:material", version.ref = "googleMaterial" }
+material3 = { module = "androidx.compose.material3:material3", version.ref = "material3" }
+okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp" }
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+socket-io-client = { module = "io.socket:socket.io-client", version.ref = "socketIoClient" }
+ui = { module = "androidx.compose.ui:ui", version.ref = "ui" }
+ui-test-junit4 = { module = "androidx.compose.ui:ui-test-junit4", version.ref = "uiTestJunit4" }
+ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "uiTooling" }
+ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "uiToolingPreview" }
+androidx-material3-android = { group = "androidx.compose.material3", name = "material3-android", version.ref = "material3Android" }
+junit-junit = { group = "junit", name = "junit", version.ref = "junitJunit" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayoutVersion" }
+
+zxing-core = { module = "com.google.zxing:core", version = "3.5.2" }
+zxing-android = { module = "com.journeyapps:zxing-android-embedded", version = "4.3.0" }
+
+
+[plugins]
+android-application = { id = "com.android.application", version = "8.7.2" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }

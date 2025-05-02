@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/gradient_background">
+
+    <!-- Signup Heading -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/create_new_account"
+        android:textSize="24sp"
+        android:textColor="#0B0B0B"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-medium" />
+
+    <TextView
+        android:id="@+id/login_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/already_have_an_account_log_in"
+        android:textSize="14sp"
+        android:textColor="#B0B0B0"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="sans-serif" />
+
+    <!-- Name Input Field -->
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="true"
+        android:minHeight="48dp"
+        android:background="@drawable/rounded_input_background"
+        android:hint="@string/enter_name"
+        android:inputType="textPersonName"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#CCCCCC" />
+
+    <!-- Email Input Field -->
+    <EditText
+        android:id="@+id/email_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="true"
+        android:minHeight="48dp"
+        android:background="@drawable/rounded_input_background"
+        android:hint="@string/email_add"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#CCCCCC" />
+
+    <!-- Password Input Field -->
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="true"
+        android:minHeight="48dp"
+        android:background="@drawable/rounded_input_background"
+        android:hint="@string/passwords"
+        android:inputType="textPassword"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#CCCCCC" />
+
+    <!-- Password Input Field -->
+    <EditText
+        android:id="@+id/confirm_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="true"
+        android:minHeight="48dp"
+        android:background="@drawable/rounded_input_background"
+        android:hint="@string/confirm_password"
+        android:inputType="textPassword"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#CCCCCC" />
+
+    <!-- Signup Button -->
+    <Button
+        android:id="@+id/signup_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/sign_up"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_button_background"
+        android:padding="12dp" />
+</LinearLayout>
